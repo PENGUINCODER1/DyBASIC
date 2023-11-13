@@ -5,7 +5,10 @@
     * [How to declare variables](#to-delcare-variables)
     * [Variable Calling](#variable-calling)
     * [The `RAND` Function](#the-rand-function)
+    * [The `MATH` Function](#the-math-function)
 * [Control](#control)
+    * [The `IF` Function](#the-if-function)
+    * [The `GOTO` Function](#the-goto-function)
 
 ## Good Practices with DyBASIC
 * Comments work here as they do in BrainF, however it's a good idea to start them with `;;` to make them easily recognizable.
