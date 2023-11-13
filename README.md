@@ -1,7 +1,7 @@
 # The DyBASIC Interpreter
 
 ## Table of Contents
-* [Variables](##variables)
+* [Variables](#variables)
  * [How to declare variables](####to-delcare-variables)
  * [Variable Calling](####variable-calling)
 
