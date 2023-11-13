@@ -14,6 +14,7 @@
     * [The `STRIN` Function](#the-strin-function)
     * [The `INTIN` Function](#the-intin-function)
     * [The `FLTIN` Function](#the-fltin-function)
+* [Console](#console)
 
 ## Good Practices with DyBASIC
 * Comments work here as they do in BrainF, however it's a good idea to start them with `;;` to make them easily recognizable.
@@ -61,3 +62,6 @@ Stores `$INT` input into a variable
 ### The `FLTIN` Function
 Stores `*FLT` input into a variable
 `STRIN;(*value)`
+
+## Console
+### The `PRINT` Function
