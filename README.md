@@ -1,5 +1,9 @@
 # The DyBASIC Interpreter
 
+## Table of Contents
+* [link](##variables)
+ * [link](####to-delcare-variables) 
+
 ## Good Practices with DyBASIC
 * Comments work here as they do in BrainF, however it's a good idea to start them with `;;` to make them easily recognizable.
 * All "useless" variables (i.e. variables only used for input and nothing more) should be started with an underscore `_`.
