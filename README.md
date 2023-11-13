@@ -1,7 +1,7 @@
 # The DyBASIC Interpreter
 
 ## Table of Contents
-* [link](##variables)
+* [link](##variables)Variables
  * [link](####to-delcare-variables) 
 
 ## Good Practices with DyBASIC
