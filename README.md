@@ -35,10 +35,10 @@ In most cases, functions only use one variable type and in turn only need the va
 * Floats `*`
 ### The `RAND` function
 Stores a psuedo-random integer into an `$INT` variable
-`RAND;($value)`
+`RAND;($value);($[$RAW]lower);($[$RAW]upper)`
 ### The `MATH` function
 Adds, subtracts, multiplies, and divides `$INT` and `*FLT` variables.
-`MATH;($*value1);(+,-,*,/);($*value2)`
+`MATH;($*[$*RAW]value1);(+,-,*,/);($*[$*RAW]value2)`
 * Both values **must** be the same type.
 
 ## Control
@@ -50,7 +50,7 @@ Goes to the line number in the code if the two values are equal, greater than, o
   * It is a good idea to put a `GOTO` function right after the `IF` function fails it's check.
 ### The `GOTO` function
 Goes to the line number in the code that was specifyied.
-`GOTO;(value)`
+`GOTO;($[$RAW]value)`
 * `value` can take both raw and `$INT` input.
 
 ## I/O
@@ -67,7 +67,7 @@ Stores `*FLT` input into a variable
 ## Console
 ### The `PRINT` Function
 Prints the input(s) onto the terminal
-`PRINT:(@$*value1);(@$*value2);(@$*value3);(@$*valueETC..)`
+`PRINT:(@$*[@$*RAW]value1);(@$*[@$*RAW]value2);(@$*[@$*RAW]value3);(@$*[@$*RAW]valueETC..)`
 * The `PRINT` function can take in raw `@STR` values.
 * The `PRINT` function has infinite input values.
    * if you wanted to print the output of a calculator, you could do `PRINT;Answer is ;$ans`.
