@@ -10,6 +10,10 @@
 * [Control](#control)
     * [The `IF` Function](#the-if-function)
     * [The `GOTO` Function](#the-goto-function)
+* [I/O](#i-o)
+    * [The `STRIN` Function](#the-strin-function)
+    * [The `INTIN` Function](#the-intin-function)
+    * [The `FLTIN` Function](#the-fltin-function)
 
 ## Good Practices with DyBASIC
 * Comments work here as they do in BrainF, however it's a good idea to start them with `;;` to make them easily recognizable.
@@ -46,3 +50,14 @@ Goes to the line number in the code if the two values are equal, greater than, o
 Goes to the line number in the code that was specifyied.
 `GOTO;(value)`
 * `value` can take both raw and `$INT` input.
+
+## I/O
+### The `STRIN` Function
+Stores `@STR` input into a variable
+`STRIN;(@value)`
+### The `INTIN` Function
+Stores `$INT` input into a variable
+`STRIN;($value)`
+### The `FLTIN` Function
+Stores `*FLT` input into a variable
+`STRIN;(*value)`
