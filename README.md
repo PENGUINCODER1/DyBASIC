@@ -1,7 +1,7 @@
 # The DyBASIC Interpreter
 
 ## Table of Contents
-*[Good Practices](#good-practices-with-dybasic)
+* [Good Practices](#good-practices-with-dybasic)
 * [Variables](#variables)
     * [How to declare variables](#to-delcare-variables)
     * [Variable Calling](#variable-calling)
