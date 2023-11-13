@@ -1,8 +1,9 @@
 # The DyBASIC Interpreter
 
 ## Table of Contents
-* [link](##variables)Variables
- * [link](####to-delcare-variables) 
+* [Variables](##variables)
+ * [How to declare variables](####to-delcare-variables)
+ * [Variable Calling](####variable-calling)
 
 ## Good Practices with DyBASIC
 * Comments work here as they do in BrainF, however it's a good idea to start them with `;;` to make them easily recognizable.
@@ -15,7 +16,8 @@
 * Strings `STR;(name);(value)`
 * Intergers `INT;(name);(value)`
 * Floats `FLT;(name);(value)`
-#### In most cases, functions only use one variable type and in turn only need the variable name. Some functions can use more than one variable type as input, in that case, use:
+#### Variable Calling
+In most cases, functions only use one variable type and in turn only need the variable name. Some functions can use more than one variable type as input, in that case, use:
 * Strings `@`
 * Intergers `$`
 * Floats `*`
