@@ -2,8 +2,8 @@
 
 ## Table of Contents
 * [Variables](#variables)
- * [How to declare variables](####to-delcare-variables)
- * [Variable Calling](####variable-calling)
+    * [How to declare variables](####to-delcare-variables)
+    * [Variable Calling](####variable-calling)
 
 ## Good Practices with DyBASIC
 * Comments work here as they do in BrainF, however it's a good idea to start them with `;;` to make them easily recognizable.
