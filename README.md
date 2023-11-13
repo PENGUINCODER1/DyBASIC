@@ -10,7 +10,7 @@
 * [Control](#control)
     * [The `IF` Function](#the-if-function)
     * [The `GOTO` Function](#the-goto-function)
-* [I/O](#i/o)
+* [I/O](#io)
     * [The `STRIN` Function](#the-strin-function)
     * [The `INTIN` Function](#the-intin-function)
     * [The `FLTIN` Function](#the-fltin-function)
