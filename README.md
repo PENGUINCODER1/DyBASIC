@@ -44,7 +44,7 @@ Adds, subtracts, multiplies, and divides `$INT` and `*FLT` variables.
 ## Control
 ### The `IF` function
 Goes to the line number in the code if the two values are equal, greater than, or less than each other.
-`IF;(@$*[@$*RAW]value1);(=,>,<);(@$*[@$*RAW]value2);(completion line)`
+`IF;(@$*[@$*RAW]value1);(=,>,<);(@$*[@$*RAW]value2);([$RAW]completion line)`
 * Both values **must** be the same type.
 * `completion line` is the line of the file to go to if the check succeds.
   * It is a good idea to put a `GOTO` function right after the `IF` function fails it's check.
