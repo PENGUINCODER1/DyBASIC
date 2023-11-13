@@ -15,6 +15,7 @@
     * [The `INTIN` Function](#the-intin-function)
     * [The `FLTIN` Function](#the-fltin-function)
 * [Console](#console)
+    * [The `PRINT` Function](#the-print-function)  
 
 ## Good Practices with DyBASIC
 * Comments work here as they do in BrainF, however it's a good idea to start them with `;;` to make them easily recognizable.
@@ -65,3 +66,8 @@ Stores `*FLT` input into a variable
 
 ## Console
 ### The `PRINT` Function
+Prints the input(s) onto the terminal
+`PRINT:(@$*value1);(@$*value2);(@$*value3);(@$*valueETC..)`
+* The `PRINT` function can take in raw `@STR` values.
+* The `PRINT` function has infinite input values.
+   * if you wanted to print the output of a calculator, you could do `PRINT;Answer is ;$ans`.
