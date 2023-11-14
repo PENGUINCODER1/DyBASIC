@@ -29,6 +29,7 @@
 * Comments work here as they do in BrainF, however it's a good idea to start them with `;;` to make them easily recognizable.
 * All "useless" variables (i.e. variables only used for input and nothing more) should be started with an underscore `_`.
 * Variables that are meant to be constant should be put at the top and started with a tilda `~`.
+* Although you can have two different types of variables with the same exact name, refrian from doing this unless it makes logical sense.
 
 ## Variables
 Anything Relating to Variables.
