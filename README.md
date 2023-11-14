@@ -33,9 +33,9 @@
 ## Variables
 Anything Relating to Variables.
 ### Variable Declaration
-* Strings `STR;(name);(value)`
-* Intergers `INT;(name);(value)`
-* Floats `FLT;(name);(value)`
+* Strings `STR;(name);([@RAW]value)`
+* Intergers `INT;(name);([$RAW]value)`
+* Floats `FLT;(name);([*RAW]value)`
 ### Variable Calling
 In most cases, functions only use one variable type and in turn only need the variable name. Some functions can use more than one variable type as input, in that case, use:
 * Strings `@`
