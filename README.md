@@ -31,12 +31,12 @@
 * Variables that are meant to be constant should be put at the top and started with a tilda `~`.
 
 ## Variables
-
-#### To delcare variables:
+Anything Relating to Variables.
+### To delcare variables:
 * Strings `STR;(name);(value)`
 * Intergers `INT;(name);(value)`
 * Floats `FLT;(name);(value)`
-#### Variable Calling
+### Variable Calling
 In most cases, functions only use one variable type and in turn only need the variable name. Some functions can use more than one variable type as input, in that case, use:
 * Strings `@`
 * Intergers `$`
@@ -53,6 +53,7 @@ Drops the variable from memory.
 `DROP;@$*variable`
 
 ## Control
+Anything Related to Control Flow.
 ### The `IF` Function
 Goes to the line number in the code if the two values are equal, greater than, or less than each other.
 `IF;(@$*[@$*RAW]value1);(=,>,<);(@$*[@$*RAW]value2);([$RAW]completion line)`
@@ -65,6 +66,7 @@ Goes to the line number in the code that was specifyied.
 * `value` can take both raw and `$INT` input.
 
 ## I/O
+Anything Related to User Input and Files.
 ### The `STRIN` Function
 Stores `@STR` input into a variable.
 `STRIN;(@value)`
@@ -81,6 +83,7 @@ Calls a `.dybsc` file and loads it in starting at the `startline`.
 * All variables from the previous program are still loaded into memory and can be accessed by the new one.
 
 ## Console
+Anything Related to the Console/Terminal.
 ### The `PRINT` Function
 Prints the input(s) onto the terminal, and then creates a newline.
 `PRINT:(@$*[@$*RAW]value1);(@$*[@$*RAW]value2);(@$*[@$*RAW]value3);(@$*[@$*RAW]valueETC..)`
