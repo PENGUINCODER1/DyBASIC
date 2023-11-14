@@ -3,7 +3,7 @@
 ## Table of Contents
 * [Good Practices](#good-practices-with-dybasic)
 * [Variables](#variables)
-    * [How to declare variables](#to-delcare-variables)
+    * [Variable Declaration](#variable-declaration)
     * [Variable Calling](#variable-calling)
     * [The `RAND` Function](#the-rand-function)
     * [The `MATH` Function](#the-math-function)
@@ -32,7 +32,7 @@
 
 ## Variables
 Anything Relating to Variables.
-### To delcare variables:
+### Variable Declaration
 * Strings `STR;(name);(value)`
 * Intergers `INT;(name);(value)`
 * Floats `FLT;(name);(value)`
