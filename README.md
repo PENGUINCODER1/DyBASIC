@@ -92,7 +92,7 @@ Prints the input(s) onto the terminal, and then creates a newline.
    * if you wanted to print the output of a calculator, you could do `PRINT;Answer is ;$ans`.
 ### The `PRNTN` Function
 Prints the input(s) onto the terminal.
-`PRNTN;(@$*[@$*RAW]value1);(@$*[@$*RAW]value2);(@$*[@$*RAW]value3);(@$*[@$*RAW]valueETC..)`
+`PRNTN;(@$*[@RAW]value1);(@$*[@RAW]value2);(@$*[@RAW]value3);(@$*[@RAW]valueETC..)`
 * The `PRNTN` function can take in raw `@STR` values.
 * The `PRNTN` function has infinite input values.
    * if you wanted to print the output of a calculator, you could do `PRNTN;Answer is ;$ans`.
