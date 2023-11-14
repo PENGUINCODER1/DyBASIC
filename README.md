@@ -86,13 +86,13 @@ Calls a `.dybsc` file and loads it in starting at the `startline`.
 Anything Related to the Console/Terminal.
 ### The `PRINT` Function
 Prints the input(s) onto the terminal, and then creates a newline.
-`PRINT:(@$*[@$*RAW]value1);(@$*[@$*RAW]value2);(@$*[@$*RAW]value3);(@$*[@$*RAW]valueETC..)`
+`PRINT;(@$*[@$*RAW]value1);(@$*[@$*RAW]value2);(@$*[@$*RAW]value3);(@$*[@$*RAW]valueETC..)`
 * The `PRINT` function can take in raw `@STR` values.
 * The `PRINT` function has infinite input values.
    * if you wanted to print the output of a calculator, you could do `PRINT;Answer is ;$ans`.
 ### The `PRNTN` Function
 Prints the input(s) onto the terminal.
-`PRINT:(@$*[@$*RAW]value1);(@$*[@$*RAW]value2);(@$*[@$*RAW]value3);(@$*[@$*RAW]valueETC..)`
+`PRNTN;(@$*[@$*RAW]value1);(@$*[@$*RAW]value2);(@$*[@$*RAW]value3);(@$*[@$*RAW]valueETC..)`
 * The `PRNTN` function can take in raw `@STR` values.
 * The `PRNTN` function has infinite input values.
    * if you wanted to print the output of a calculator, you could do `PRNTN;Answer is ;$ans`.
