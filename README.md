@@ -7,6 +7,7 @@
     * [Variable Calling](#variable-calling)
     * [The `RAND` Function](#the-rand-function)
     * [The `MATH` Function](#the-math-function)
+    * [The `DROP` Function](#the-drop-function)
 * [Control](#control)
     * [The `IF` Function](#the-if-function)
     * [The `GOTO` Function](#the-goto-function)
@@ -14,8 +15,15 @@
     * [The `STRIN` Function](#the-strin-function)
     * [The `INTIN` Function](#the-intin-function)
     * [The `FLTIN` Function](#the-fltin-function)
+    * [The `CALL` Function](#the-call-function)
 * [Console](#console)
-    * [The `PRINT` Function](#the-print-function)  
+    * [The `PRINT` Function](#the-print-function)
+    * [The `PRNTN` Function](#the-prntn-function)
+    * [The `CRSR` Function](#the-crsr-function)
+    * [The `CLEAR` Function](#the-clear-function)
+    * [The `SLEEP` Function](#the-sleep-function)
+    * [The `HOLD` Function](#the-hold-function)
+    * [The `QUIT` Function](#the-quit-function)
 
 ## Good Practices with DyBASIC
 * Comments work here as they do in BrainF, however it's a good idea to start them with `;;` to make them easily recognizable.
@@ -33,41 +41,70 @@ In most cases, functions only use one variable type and in turn only need the va
 * Strings `@`
 * Intergers `$`
 * Floats `*`
-### The `RAND` function
-Stores a psuedo-random integer into an `$INT` variable
+### The `RAND` Function
+Stores a psuedo-random integer into an `$INT` variable.
 `RAND;($value);($[$RAW]lower);($[$RAW]upper)`
-### The `MATH` function
+### The `MATH` Function
 Adds, subtracts, multiplies, and divides `$INT` and `*FLT` variables.
 `MATH;($*[$*RAW]value1);(+,-,*,/);($*[$*RAW]value2)`
 * Both values **must** be the same type.
+### The `DROP` Function
+Drops the variable from memory.
+`DROP;@$*variable`
 
 ## Control
-### The `IF` function
+### The `IF` Function
 Goes to the line number in the code if the two values are equal, greater than, or less than each other.
 `IF;(@$*[@$*RAW]value1);(=,>,<);(@$*[@$*RAW]value2);([$RAW]completion line)`
 * Both values **must** be the same type.
-* `completion line` is the line of the file to go to if the check succeds.
+* `completion line` is the line of the file to go to if the check succeeds.
   * It is a good idea to put a `GOTO` function right after the `IF` function fails it's check.
-### The `GOTO` function
+### The `GOTO` Function
 Goes to the line number in the code that was specifyied.
 `GOTO;($[$RAW]value)`
 * `value` can take both raw and `$INT` input.
 
 ## I/O
 ### The `STRIN` Function
-Stores `@STR` input into a variable
+Stores `@STR` input into a variable.
 `STRIN;(@value)`
 ### The `INTIN` Function
-Stores `$INT` input into a variable
+Stores `$INT` input into a variable.
 `STRIN;($value)`
 ### The `FLTIN` Function
-Stores `*FLT` input into a variable
+Stores `*FLT` input into a variable.
 `STRIN;(*value)`
+### The `CALL` Function
+Calls a `.dybsc` file and loads it in starting at the `startline`.
+`CALL;(@[@RAW]filename);($[$RAW]startline)`
+* Do not include the `.dybsc` file extension in `filename`.
+* All variables from the previous program are still loaded into memory and can be accessed by the new one.
 
 ## Console
 ### The `PRINT` Function
-Prints the input(s) onto the terminal
+Prints the input(s) onto the terminal, and then creates a newline.
 `PRINT:(@$*[@$*RAW]value1);(@$*[@$*RAW]value2);(@$*[@$*RAW]value3);(@$*[@$*RAW]valueETC..)`
 * The `PRINT` function can take in raw `@STR` values.
 * The `PRINT` function has infinite input values.
    * if you wanted to print the output of a calculator, you could do `PRINT;Answer is ;$ans`.
+### The `PRNTN` Function
+Prints the input(s) onto the terminal.
+`PRINT:(@$*[@$*RAW]value1);(@$*[@$*RAW]value2);(@$*[@$*RAW]value3);(@$*[@$*RAW]valueETC..)`
+* The `PRNTN` function can take in raw `@STR` values.
+* The `PRNTN` function has infinite input values.
+   * if you wanted to print the output of a calculator, you could do `PRNTN;Answer is ;$ans`.
+### The `CRSR` Function
+Moves the cursor to the wanted position.
+`CRSR;($[$RAW]x);($[$RAW]y)`
+### The `CLEAR` Function
+Clears the terminal.
+`CLEAR`
+### The `SLEEP` Function
+Waits for x amount of milliseconds.
+`SLEEP;($[$RAW]milliseconds)`
+### The `HOLD` Function
+Waits until the user presses a key.
+`HOLD`
+### The `QUIT` Function
+Quits the program.
+`QUIT`
