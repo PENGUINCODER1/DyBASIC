@@ -1,4 +1,4 @@
-# The DyBASIC Interpreter
+# The DyBASIC (v1.0) Interpreter
 
 ## Table of Contents
 * [Good Practices](#good-practices-with-dybasic)
