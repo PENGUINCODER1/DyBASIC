@@ -63,7 +63,7 @@ Goes to the line number in the code if the two values are equal, greater than, o
   * It is a good idea to put a `GOTO` function right after the `IF` function fails it's check.
 ### The `GOTO` Function
 Goes to the line number in the code that was specifyied.
-`GOTO;($[$RAW]value)`
+`GOTO;([$RAW]value)`
 * `value` can take both raw and `$INT` input.
 
 ## I/O
