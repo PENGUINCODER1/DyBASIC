@@ -11,6 +11,8 @@
 * [Control](#control)
     * [The `IF` Function](#the-if-function)
     * [The `GOTO` Function](#the-goto-function)
+    * [The `LBL` Function](#the-lbl-function)
+    * [The `GLBL` Function](#the-glbl-function)
 * [I/O](#io)
     * [The `STRIN` Function](#the-strin-function)
     * [The `INTIN` Function](#the-intin-function)
@@ -65,6 +67,12 @@ Goes to the line number in the code if the two values are equal, greater than, o
 Goes to the line number in the code that was specifyied.
 `GOTO;([$RAW]value)`
 * `value` can take both raw and `$INT` input.
+### The 'LBL' Function
+Adds a label into the code.
+`LBL;([@RAW]name)`
+### The `GLBL` Function
+Goes to a label in the code.
+`GLBL;([@RAW]name)`
 
 ## I/O
 Anything Related to User Input and Files.
