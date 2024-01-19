@@ -46,47 +46,58 @@ In most cases, functions only use one variable type and in turn only need the va
 * Floats `*`
 ### The `RAND` Function
 Stores a psuedo-random integer into an `$INT` variable.
+
 `RAND;($value);($[$RAW]lower);($[$RAW]upper)`
 ### The `MATH` Function
 Adds, subtracts, multiplies, and divides `$INT` and `*FLT` variables.
+
 `MATH;($*[$*RAW]value1);(+,-,*,/);($*[$*RAW]value2)`
 * Both values **must** be the same type.
 ### The `DROP` Function
 Drops the variable from memory.
+
 `DROP;@$*variable`
 
 ## Control
 Anything Related to Control Flow.
 ### The `IF` Function
 Goes to the line number in the code if the two values are equal, greater than, or less than each other.
+
 `IF;(@$*[@$*RAW]value1);(=,>,<);(@$*[@$*RAW]value2);([$RAW]completion line)`
 * Both values **must** be the same type.
 * `completion line` is the line of the file to go to if the check succeeds.
   * It is a good idea to put a `GOTO` function right after the `IF` function fails it's check.
 ### The `GOTO` Function
 Goes to the line number in the code that was specifyied.
+
 `GOTO;([$RAW]value)`
 * `value` can take both raw and `$INT` input.
 ### The 'LBL' Function
 Adds a label into the code.
+
 `LBL;([@RAW]name)`
 ### The `GLBL` Function
 Goes to a label in the code.
+
 `GLBL;([@RAW]name)`
 
 ## I/O
 Anything Related to User Input and Files.
 ### The `STRIN` Function
 Stores `@STR` input into a variable.
+
 `STRIN;(@value)`
 ### The `INTIN` Function
 Stores `$INT` input into a variable.
+
 `STRIN;($value)`
 ### The `FLTIN` Function
 Stores `*FLT` input into a variable.
+
 `STRIN;(*value)`
 ### The `CALL` Function
 Calls a `.dybsc` file and loads it in starting at the `startline`.
+
 `CALL;(@[@RAW]filename);($[$RAW]startline)`
 * Do not include the `.dybsc` file extension in `filename`.
 * All variables from the previous program are still loaded into memory and can be accessed by the new one.
@@ -95,28 +106,35 @@ Calls a `.dybsc` file and loads it in starting at the `startline`.
 Anything Related to the Console/Terminal.
 ### The `PRINT` Function
 Prints the input(s) onto the terminal, and then creates a newline.
+
 `PRINT;(@$*[@RAW]value1);(@$*[@RAW]value2);(@$*[@RAW]value3);(@$*[@RAW]valueETC..)`
 * The `PRINT` function can take in raw `@STR` values.
 * The `PRINT` function has infinite input values.
    * if you wanted to print the output of a calculator, you could do `PRINT;Answer is ;$ans`.
 ### The `PRNTN` Function
 Prints the input(s) onto the terminal.
+
 `PRNTN;(@$*[@RAW]value1);(@$*[@RAW]value2);(@$*[@RAW]value3);(@$*[@RAW]valueETC..)`
 * The `PRNTN` function can take in raw `@STR` values.
 * The `PRNTN` function has infinite input values.
    * if you wanted to print the output of a calculator, you could do `PRNTN;Answer is ;$ans`.
 ### The `CRSR` Function
 Moves the cursor to the wanted position.
+
 `CRSR;($[$RAW]x);($[$RAW]y)`
 ### The `CLEAR` Function
 Clears the terminal.
+
 `CLEAR`
 ### The `SLEEP` Function
 Waits for x amount of milliseconds.
+
 `SLEEP;($[$RAW]milliseconds)`
 ### The `HOLD` Function
 Waits until the user presses a key.
+
 `HOLD`
 ### The `QUIT` Function
 Quits the program.
+
 `QUIT`
